@@ -41,14 +41,12 @@ function generateMarkdown(data) {
  Using the terminal window the user must call / type - node js [return} and proceed with node index.js written on the command line 
  after that the command line interface will generate questions that have been answered by the programmer.
 
-
-  
- 
- __Usage:_
+__Usage:_
     $data.use
 
-  __Contributors:__
-  $data.con
+ 
+### **Contributors**
+  $data.c
 
   > questions or comments contact me by ${data.contact}:
 
