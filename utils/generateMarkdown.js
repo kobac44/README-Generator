@@ -26,19 +26,33 @@ function generateMarkdown(data) {
 
  # **Description**
 
-  _Repo by ${data.name}_
-  
-  __${data.desc}__
+ > ${data.desc}
 
-  ---
- __Installation:__
-  ${data.import
-    
-    __Usage:__
-  $data.use
+ > This README.md generator is another way to create a README.md for developers. The application can only be
+ be used in terminal or gitbash terminal using node js programming sofware. To run this project from the CLI using 
+ key-word  node 'space' index.js calling a series of questions that generate a good README.md file.
+ 
+ 
+#  **Installation**
+
+   ${Installation}:
+
+ * Installations used were, node js, fs, util, and the inquirer installed to run this application on gitbash terminal CLI.
+ Using the terminal window the user must call / type - node js [return} and proceed with node index.js written on the command line 
+ after that the command line interface will generate questions that have been answered by the programmer.
+
+
+  
+ 
+ __Usage:_
+    $data.use
 
   __Contributors:__
   $data.con
+
+  > questions or comments contact me by ${data.contact}:
+
+  ###  kobie.watkins@gmail.com
 
     __Tests:__
   $data.test
