@@ -1,13 +1,30 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+    [!NPM version](https://badgen.net/npm/v/inquirer-emoji) <img src="https://badge.fury.io/js/inquirer.svg" alt="npm"
+
+
+  # Licence
+
+ >  [![License] (https://img.shields.io/badge/License-${data.licence}.svg)]
+ 
+
   # ${data.title.toUpperCase()}
 
-  ![License: ${
-    data.lic ? data.lic : "None"
-  }](https://img.shields.io/badge/License-MIT-yellow.svg-${
-    data.lic ? data.lic : "None"
-  }-brightgreen)
+  ### node js :package:
+
+  #  Table of Contents
+  <!-- toc -->
+
+  * [Description] (#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributors](#contributors)
+  * [GitHub Informationl](#github-information)
+  * [Questions](#questions)
+  * [Credits](#credits)
+
+ # **Description**
 
   _Repo by ${data.name}_
   

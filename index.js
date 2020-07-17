@@ -3,7 +3,8 @@ const fs = require("fs");
 
 const api = require("./utils/api.js");
 const README = require();
-const generateMarkdown = require("./utils/generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown");
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // function to write README file
 const writeToFile = (fileName, data) => {
@@ -14,9 +15,16 @@ const writeToFile = (fileName, data) => {
   );
 };
 
-const writeFileAsync = util.promisify(fs.writeFile);
+
+
+async function init() {
+
+const userInfo = await promptUser();
+
 // array of questions for user
-const questions = [];
+
+// const questions =  [
+
 function promptUser() {
   return inquirer.prompt([]);
 }
