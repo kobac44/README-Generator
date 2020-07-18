@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const userInfo = promptUser();
+// const userInfo = promptUser();
 const util = require("util");
 // const api = require("./utils/api.js");
 
@@ -8,7 +8,6 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const { title } = require("process");
 const writeFileAsync = util.promisify(fs.writeFile);
 // function call to initialize program
-init();
 
 async function init() {
   console.log("Welcome to Kobie Watkins README.md file Generator");
