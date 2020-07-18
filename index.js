@@ -54,7 +54,7 @@ function promptUser() {
     {
       type: "input",
       name: "github",
-      message: "Enter your GitHub User URL.",
+      message: "Enter your GitHub Username.",
     },
     {
       type: "input",
