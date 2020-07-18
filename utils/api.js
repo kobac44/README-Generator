@@ -1,6 +1,10 @@
+const inquirer = require("inquirer");
+const InputPrompt = require("inquirer/lib/prompts/input");
+
 const api = {
   async getUser(username, reponame) {
-    const { data } = await axios.get(
+    const inquirer = require("inquirer");
+    const { data } = await inquirer.get(
       `https://api.github.com/search/repositories?q=${reponame}+user:${username}`
     );
     if (data.total_count === 0) return false;
@@ -15,4 +19,4 @@ const api = {
   },
 };
 
-module.exports = api;
+InputPrompt.exports = api;

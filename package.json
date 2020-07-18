@@ -14,5 +14,10 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/username/repo/issues"
+  },
+  "homepage": "https://github.com/username/repo#readme",
+  "devDependencies": {}
 }

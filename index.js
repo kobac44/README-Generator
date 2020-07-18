@@ -1,10 +1,10 @@
 const prompt = require("inquirer").createPromptModule();
 const fs = require("fs");
-
+const userInfo = promptUser();
 const util = require("util");
 const api = require("./utils/api.js");
 //const README = require();
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown").default;
 const { title } = require("process");
 const writeFileAsync = util.promisify(fs.writeFile);
 // function call to initialize program
@@ -24,7 +24,6 @@ async function init() {
     console.log(err);
   }
 }
-const userInfo = await promptUser();
 
 // array of questions for user
 
