@@ -1,14 +1,14 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  
+
 
     [!NPM version](https://badgen.net/npm/v/inquirer-emoji) <img src="https://badge.fury.io/js/inquirer.svg" alt="npm"
 
 
-  # Licence
+  # License
 
- >  [![License] (https://img.shields.io/badge/License-${data.licence}.svg)]
+ >  [![License] (https://img.shields.io/badge/License-${data.license}.svg)]
  
 
   # ${data.title.toUpperCase()}
@@ -59,6 +59,14 @@ Run 'node index.js'. It will ask for a username and repo name
   ${data.con}:
 
  * UNC/ TRILOGY provided starter files and code, and I was the developer.
+ 
+
+ ## **GitHub Information**
+
+ # '''https://github.com/kobac44'''
+
+ Picture of Developer:
+
 
  
  ## *Questions*
@@ -67,13 +75,13 @@ Run 'node index.js'. It will ask for a username and repo name
 
 ###  kobie.watkins@gmail.com
 
+
+
     
  ##  Tests:
   $data.test
 
-  __Questions:__
-  $data.questions
-
+ 
   {  } from "module":}
   
   `;
