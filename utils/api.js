@@ -1,5 +1,4 @@
 const inquirer = require("inquirer");
-const InputPrompt = require("inquirer/lib/prompts/input");
 
 const api = {
   async getUser(username, reponame) {
@@ -19,4 +18,4 @@ const api = {
   },
 };
 
-InputPrompt.exports = api;
+module.exports = api;
