@@ -1,24 +1,29 @@
 const prompt = require("inquirer").createPromptModule();
 const fs = require("fs");
 
+const util = require("util");
 const api = require("./utils/api.js");
-const README = require();
+//const README = require();
 const generateMarkdown = require("./utils/generateMarkdown");
+const { title } = require("process");
 const writeFileAsync = util.promisify(fs.writeFile);
-
-// function to write README file
-const writeToFile = (fileName, data) => {
-  fs.writeFile(readMe + ".Markdown", data, (error) =>
-    error
-      ? console.error(error)
-      : console.log(`${fileName + "Markdown"} generated!`)
-  );
-};
-
-
+// function call to initialize program
+init();
 
 async function init() {
+  console.log("Welcome to Kobie Watkins README.md file Generator");
+  try {
+    const answers = await promptUser();
 
+    const markDown = generateMarkdown(answers);
+
+    await writeFileAsync("README.md", markDown);
+
+    console.log("Successfully completed the README.md");
+  } catch (err) {
+    console.log(err);
+  }
+}
 const userInfo = await promptUser();
 
 // array of questions for user
@@ -26,7 +31,26 @@ const userInfo = await promptUser();
 // const questions =  [
 
 function promptUser() {
-  return inquirer.prompt([]);
+  return inquirer.prompt([
+    {
+      type: "input",
+      name: title,
+      message: "What is the of your project?",
+    },
+    {
+      type: "editor",
+      name: "description",
+      message: "Please provide a good description of your project."
+    }
+    {
+      type: "editor",
+      name: "installation",
+      message: "What are the installation instructions?",
+    }
+    {
+      
+    }
+  ]);
 }
 
 // function call to initialize program
