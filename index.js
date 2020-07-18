@@ -34,22 +34,39 @@ function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
-      name: title,
+      name: "title",
       message: "What is the of your project?",
     },
     {
       type: "editor",
       name: "description",
-      message: "Please provide a good description of your project."
-    }
+      message: "Please provide a good description of your project.",
+    },
+    {
+      type: "input",
+      name: "contributors",
+      message: "Who are the contributors?",
+    },
     {
       type: "editor",
       name: "installation",
       message: "What are the installation instructions?",
-    }
+    },
     {
-      
-    }
+      type: "input",
+      name: "github",
+      message: "Enter your GitHub User URL.",
+    },
+    {
+      type: "input",
+      name: "questions",
+      message: "Any questions?",
+    },
+    {
+      type: "input",
+      name: "test",
+      message: "What are the tests?",
+    },
   ]);
 }
 
