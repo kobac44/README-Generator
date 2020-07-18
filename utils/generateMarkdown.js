@@ -1,6 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
+  
+
     [!NPM version](https://badgen.net/npm/v/inquirer-emoji) <img src="https://badge.fury.io/js/inquirer.svg" alt="npm"
 
 
@@ -40,19 +42,33 @@ function generateMarkdown(data) {
  * Installations used were, node js, fs, util, and the inquirer installed to run this application on gitbash terminal CLI.
  Using the terminal window the user must call / type - node js [return} and proceed with node index.js written on the command line 
  after that the command line interface will generate questions that have been answered by the programmer.
+ Clone the repository to your computer.
 
-__Usage:_
-    $data.use
+
+
+ # **Usage**
+
+${data.use}:
+
+Run 'node index.js'. It will ask for a username and repo name
+
 
  
 ### **Contributors**
-  $data.c
 
-  > questions or comments contact me by ${data.contact}:
+  ${data.con}:
 
-  ###  kobie.watkins@gmail.com
+ * UNC/ TRILOGY provided starter files and code, and I was the developer.
 
-    __Tests:__
+ 
+ ## *Questions*
+ 
+ > questions or comments contact me by ${data.contact}:
+
+###  kobie.watkins@gmail.com
+
+    
+ ##  Tests:
   $data.test
 
   __Questions:__
