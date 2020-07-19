@@ -7,8 +7,32 @@ const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 const { title } = require("process");
 const writeFileAsync = util.promisify(fs.writeFile);
-// function call to initialize program
 
+// licenses
+const apache = {
+  text:
+    "Licensed under the [Apache License](https://spdx.org/licenses/Apache-2.0.html).",
+  badge:
+    "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+};
+const gnu = {
+  text:
+    "Licensed under the [GNU GPLv3 License](https://spdx.org/licenses/GPL-3.0-or-later.html).",
+  badge:
+    "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
+};
+const mit = {
+  text: "Licensed under the [MIT License](https://spdx.org/licenses/MIT.html).",
+  badge:
+    "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+};
+const isc = {
+  text: "Licensed under the [ISC License](https://spdx.org/licenses/ISC.html).",
+  badge:
+    "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)",
+};
+
+// function call to initialize program
 async function init() {
   console.log("Welcome to Kobie Watkins README.md file Generator");
   try {
@@ -26,8 +50,6 @@ async function init() {
 
 // array of questions for user
 
-// const questions =  [
-
 function promptUser() {
   return inquirer.prompt([
     {
@@ -39,6 +61,13 @@ function promptUser() {
       type: "editor",
       name: "description",
       message: "Please provide a good description of your project.",
+    },
+    {
+      type: "list",
+      name: "license",
+      message:
+        "Choose a license (if project is open sourced, please choose 'none' from the list below).",
+      choices: ["Apache License", "GNU GPLv3", "MIT", "ISC", "None"],
     },
     {
       type: "input",
