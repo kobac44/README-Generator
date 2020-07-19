@@ -8,12 +8,13 @@
 
 <!-- toc -->
 
-_[Description](#description)
-_[Installation](#installation)
-_[Usage](#usage)
-_[Contributors](#contributors)
-_[GitHub Informationl](#github-information)
-_[Questions](#questions) \*[Credits](#credits)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributors](#contributors)
+* [GitHub Informationl](#github-information)
+* [Questions](#questions) 
+* [Credits](#credits)
 
 # **Description**
 
