@@ -32,7 +32,6 @@ Run 'node index.js'. It will ask for a username and repo name
 
 ## **GitHub Information**
 
-[https://github.com/kobac44](https://github.com/https://github.com/kobac44/)
 
 ## _Questions_
 
