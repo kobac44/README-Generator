@@ -15,13 +15,13 @@ function generateMarkdown(data) {
 ##  Table of Contents
 <!-- toc -->
 
-[Description](#description)
-[Installation](#installation)
-[Usage](#usage)
-[Contributors](#contributors)
-[GitHub Informationl](#github-information)
-[Questions](#questions)
-[Credits](#credits)
+*[Description](#description)
+*[Installation](#installation)
+*[Usage](#usage)
+*[Contributors](#contributors)
+*[GitHub Informationl](#github-information)
+*[Questions](#questions)
+*[Credits](#credits)
 
 # **Description**
 
